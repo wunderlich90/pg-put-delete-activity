@@ -1,0 +1,18 @@
+[ ] Add a delete button for each book
+    [ ] should make an ajax call to a DELETE endpoint
+    [ ] should pass the book `id` as a URL parameter 
+    [ ] should remove the book from the DB
+
+[ ] Update the book list disply to show if a book has been
+    read or not 
+    [ ] render he isRead column in the DOM
+    [ ] add another button to each book allowing the user
+        to `Mark as Read`
+        [ ] should trigger a PUT Ajax call
+        [ ] should pass the book `id` as a URL parameter
+        [ ] should update the book record in the DB
+
+
+[ ] DELETE and PUT Ajax calls
+[ ] DELETE and PUT server side
+[ ] page should refresh with up to date data after DELETE or PUT

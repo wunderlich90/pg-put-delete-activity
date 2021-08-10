@@ -50,7 +50,7 @@ function refreshBooks() {
 // Displays an array of books to the DOM
 function renderBooks(books) {
   $('#bookShelf').empty();
-
+  
   for(let i = 0; i < books.length; i += 1) {
     let book = books[i];
     // For each book, append a new row to our table
@@ -58,7 +58,15 @@ function renderBooks(books) {
       <tr>
         <td>${book.title}</td>
         <td>${book.author}</td>
+        <td>${book.isRead}</td>
+        <td>
+          <button class="deleteBtn">X</button>
+          <button class="markAsRead">Read</button>
+        </td>
       </tr>
-    `);
+    `)
   }
 }
+
+  
+  
